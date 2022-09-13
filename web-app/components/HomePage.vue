@@ -1,7 +1,15 @@
 <template>
-    <div>
-        <div>
-            <img :src="event.image" />
-        </div>
+    <main>
+     <div class="row">
+        <img class="logo" src="~assets/images/logo full.png"/>
+        <h1>Welcome to Canberra Modern</h1>
     </div>
-</template>
+   </main>
+  </template>
+
+<style>
+    .logo{
+        max-width: 100px;
+        margin-left: 50px;
+    }
+  </style>

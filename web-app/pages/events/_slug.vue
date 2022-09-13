@@ -1,5 +1,6 @@
 <template>
     <main>
+      <SlugPage />
         <div><h1>{{event[0].title.rendered}}</h1>
         <br>
         <h3>{{event[0].acf.date}}</h3>
@@ -10,7 +11,6 @@
 
       </div>
      <div>
-        <Nuxtlink to="/index">Back to home page</Nuxtlink>
        <h3>Created by u3185388</h3>
      </div>
    </main>

@@ -1,6 +1,6 @@
 <template>
     <main>
-      <img class="logo" src="~assets/images/logo full.png"/>
+      <SlugPage />
       <h1>The past Canberra Mordent Events</h1>
       <p>Click any events to see more information</p>
      <h5 v-if="$fetchState.pending">Just a monent...</h5>
@@ -11,12 +11,11 @@
            <NuxtLink :to="'/events/' + event.slug">
            {{  event.title.rendered  }}
            </NuxtLink>
-           <NuxtLink to="error">Error Page Example</NuxtLink>
        </span>
        </li>
      </ul>
      <div>
-       <h3>Created by u3185388</h3>
+      <h5>Created by u3185388</h5>
      </div>
    </main>
   </template>
@@ -36,11 +35,3 @@
     },
     }
   </script>
-  
-  <style>
-  
-    .logo{
-      max-width: 5%;
-    }
-  
-  </style>
