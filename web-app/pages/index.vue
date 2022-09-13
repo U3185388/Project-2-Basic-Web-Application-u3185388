@@ -8,7 +8,7 @@
    <ul v-else>
      <li v-for="event in events" :key="event.id">
        <span>
-         <NuxtLink :to="event.slug">
+         <NuxtLink :to="'/events/' + event.slug">
          {{  event.title.rendered  }}
          </NuxtLink>
      </span>
