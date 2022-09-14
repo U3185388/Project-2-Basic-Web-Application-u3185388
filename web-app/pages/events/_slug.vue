@@ -1,12 +1,12 @@
 <template>
     <main>
-      <SlugPage />
+      <SecPage />
         <div><h1>{{event[0].title.rendered}}</h1>
         <br>
         <h3>{{event[0].acf.date}}</h3>
 
         <!-- Use this to filt the content -->
-        <div v-html="renderedContent"></div>
+        <div class="text-center" v-html="renderedContent"></div>
 
 
       </div>

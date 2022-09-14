@@ -1,8 +1,8 @@
 <template>
     <main>
-      <SlugPage />
+      <SecPage />
       <h1>The modern Canberra buildings</h1>
-      <p>Click any buildings to see more information</p>
+      <p>Click any buildings to check details</p>
      <h5 v-if="$fetchState.pending">Just a monent...</h5>
      <h5 v-else-if="$fetchState.error">Oops! Something went wrong...</h5>
      <ul v-else>

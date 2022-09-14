@@ -1,6 +1,6 @@
 <template>
     <main>
-      <SlugPage />
+      <SecPage />
         <div><h1>{{building[0].title.rendered}}</h1>
         <br>
         <p>Located at {{building[0].acf.location}}
@@ -16,7 +16,7 @@
   
   
   <script>
-import SlugPage from '~/components/SlugPage.vue';
+import SecPage from '~/components/SecPage.vue';
     export default {
     async asyncData({ params }) {
         const building = await fetch(`http://cm.beneb.com/wp-json/wp/v2/buildings/?slug=${params.slug}`).then((res) => {
@@ -29,7 +29,7 @@ import SlugPage from '~/components/SlugPage.vue';
         const renderedContent = building[0].content.rendered;
         return { renderedContent, building };
     },
-    components: { SlugPage }
+    components: { SecPage }
 }
 
 

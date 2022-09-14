@@ -1,13 +1,6 @@
 <template>
     <main>
       <HomePage />
-      <!-- <ul>
-       <li v-for="page in pages" :key="page.id">
-           <NuxtLink :to="'/pages/' + page.slug">
-           {{  page.title.rendered  }}
-           </NuxtLink>
-           </li>
-          </ul> -->
     <ul>
           <li><NuxtLink to="/about">About us</NuxtLink></li>
           <li><NuxtLink to="/events">The past Canberra Mordent Events</NuxtLink></li>
