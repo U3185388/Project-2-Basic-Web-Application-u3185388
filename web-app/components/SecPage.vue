@@ -33,6 +33,7 @@
   }
 
   .bar{
+      font-family: futura-pt, sans-serif;
       font-size: 20px;
       display: flex;
       justify-content: space-between;
