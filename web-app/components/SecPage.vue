@@ -63,26 +63,6 @@
     text-decoration: none;
     font-weight: bold;
   }
-
-  #nav-toggle{
-    position: absolute;
-  }
-
-  nav .burger{
-    display: none;
-    position: absolute;
-    right: 5%;
-    top: 10%;
-    transform: translateY(-50%);
-  }
-
-  nav .burger .line{
-    width: 2rem;
-    height: 0.3rem;
-    background-color: white;
-    margin: 0.3rem;
-    border-radius: 0.2rem;
-  }
  
  /* Responsive to over 1080p resolution */
    @media (min-width:1920px) {

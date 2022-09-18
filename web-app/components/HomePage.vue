@@ -1,87 +1,97 @@
 <template>
     <main>
-     <nav class="nav">
-        <img class="logo" src="~assets/images/logo full.png"/>
+        <!-- This is the navigation bar in home page -->
+
+        <nav class="nav">
+        <div class="logo"><img src="~assets/images/logo full.png"/></div>
+        <!-- Logo on the left side -->>
+        
         <div class="menubar"><h1>Welcome to Canberra Modern</h1></div>
-     </nav>
+        </nav>
+        <!-- No need function in home page; So as welcome -->
+
    </main>
   </template>
 
 <style>
 
-    .nav{
-    width: 100%;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-  }
+  /* Create based on 1080p resolution */
 
-  .nav .logo{
-        max-width: 100px;
-    }
+ .logo img{
+   margin-bottom: 40%;
+   max-width: 6rem;
+ }
 
-  .menubar{
-    margin-top: 25px;
-  }
+ .nav{
+   height: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 2.5rem;
+   padding-left: 5%;
+   padding-right: 40%;
+   background-color: black;
+   background-size: cover;
+   background-position: center;
+ }
 
-  h1{
-      font-family: futura-pt, sans-serif;
-      display: flex;
-      margin-left: 500px;
-      color: white;
-  }
+ .menubar{
+   margin-top: -5%;
+   margin-right: -70%;
+   font-family: futura-pt, sans-serif;
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+ }
 
-  @media screen and (min-width:720px) and (max-width: 1280px) {
-    .logo{
-      max-width: 70px;
-    }
-    
-    .nav{
-    width: 100%;
-  }
+/* Responsive to over 1080p resolution */
+ @media (min-width:1920px) {
+   .logo img{
+   max-width: 10rem;
+ }
 
-  h1{
-      margin-left: 230px;
-      font-size: 25px;
-  }
+ .nav{
+   height: 10rem;
+ }
 
-  }
+ .menubar{
+   margin-top: -3%;
+   font-size: 2.5rem;
+ }
+   
+}
 
-  @media screen and (min-width:480px) and (max-width: 719px) {
-    .logo{
-      max-width: 50%;
-    }
+/* Responsive to 720p resolution; can be responsive for tablet */
+@media (min-width:800px) and (max-width:1280px){
+ .logo img{
+   max-width: 6rem;
+ }
 
-  h1{
-      margin-left: 100px;
-      font-size: 20px;
-  }
+ .nav{
+   height: 6rem;
+ }
 
-  @media screen and (max-width: 479px) {
-    .logo{
-        max-width: 30%;
-    }
-
-    .nav{
-    width: 100%;
-    height: 10%;
-  }
-
-  .menubar{
-    margin-top: 5px;
-  }
-
-  h1{
-      font-size: 5px;
-      font-family: futura-pt, sans-serif;
-      display: flex;
-      margin-left: 50px;
-      color: white;
-  }
+ .menubar{
+   font-size: 1.1rem;
+ }
 
 }
 
+/* Responsive to 720p lower resolution; can be responsive for mobile */
+@media (max-width:799px){
+ .logo img{
+   max-width: 5rem;
+ }
+
+ .nav{
+   height: 3rem;
+ }
+
+ .menubar{
+  font-size: 0.7rem;
+ }
+
 }
 
-
-  </style>
+</style>
