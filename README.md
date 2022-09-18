@@ -48,8 +48,8 @@ The homepage is styled like a blog site.
  <br>**Event slug page:**
  ![slug page (2)](https://user-images.githubusercontent.com/53715219/190904956-b41a90fe-1b6d-49a2-9a26-0145881f2a7f.png)
 ## Reflection
-As I write this document, there is only "regret" in my heart.<br>
+As I write this document, I can only feel regret.<br>
 There have been so many tasks to upload in these two weeks that it was a little too late for me to start this task. Because I know in my heart that I should have done better; the extension of the upload deadline has allowed me to do this project decently, and I am very grateful for that.<br>
 During this intense process, I captured some artistic features in advance and showed them on the website to make it look artistic. Because this was my first exposure to frameworks and I had not mastered the language constructs of JavaScript before; this led me to spend a lot of time learning and doing tutorial exercises. Fortunately, the long-term study has given me a certain understanding of most of the nuxt and even vue frameworks.<br>
 In this process, the most difficult time should be when you first come into contact with nuxt. The new version brings a lot of file changes, which leads me to always encounter steps that cannot be carried out in my learning; for example, the "Layout" file is removed in the new version (should be placed in the nuxt root directory), which makes I have a huge headache. I even spent some time tweaking Powershell and installing yarn due to issues with my system (that kind of thing that's only available in China always has all sorts of castrations). But these experiences have given me a very clear understanding of each file.<br>
-All in all, although it was a rush, I was quite happy.
+Anyway, although it was a rush, I was quite happy.
