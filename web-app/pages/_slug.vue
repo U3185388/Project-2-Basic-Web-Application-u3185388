@@ -1,15 +1,16 @@
 <template>
     <main>
       <SecPage />
+        <!-- Select component -->
+
       <section id="detail">
-        <div class="header"><span>{{page[0].title.rendered}}</span>
-        <br>
+        <!-- This is the content in slug page -->
+
+        <div class="header"><span><a class="title">{{page[0].title.rendered}}</a></span></div>
+        <!-- Publish each title in API -->
 
         <!-- Use this to filt the content -->
-        <div class="text">
         <div v-html="renderedContent" class="content"></div>
-        </div>
-      </div>
 
      </section>
    </main>
@@ -38,13 +39,14 @@ import SecPage from '~/components/SecPage.vue';
   </script>
 
   <style>
+    /* Same style slug sheet */
 
 #detail {
     background: linear-gradient(#7187c1, #fae383, #f26f75);
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    border-bottom: 1px solid black;
+    padding: 2.5rem;
+    border-bottom: 0.1rem solid black;
   }
 
   .header {
@@ -52,28 +54,82 @@ import SecPage from '~/components/SecPage.vue';
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .header span .title{
     font-family: futura-pt, sans-serif;
+    font-size: 5rem;
+    color: black;
+  }
+
+ .content {
+    font-family: futura-pt, sans-serif;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .content p{
+    font-size: 1.7rem;
+  }
+
+  .content img{
+    display: flex;
+    text-align: center;
+  }
+
+  /* Responsive to over 1080p resolution */
+@media (min-width:1920px) {
+  .header span .title{
+    font-size: 10rem;
+  }
+
+  .content {
+    font-size: 5rem;
+  }
+
+  .content p{
     font-size: 3rem;
-    color: black;
   }
 
-  .container {
-    display: flex;
-    margin: 60px 90px;
-    flex-wrap: wrap;
+}
+
+/* Responsive to 720p resolution; can be responsive for tablet */
+@media (min-width:800px) and (max-width:1280px){
+  .header span .title{
+    font-size: 3rem;
   }
 
-  .text {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text .content {
-    font-family: futura-pt, sans-serif;
+  .content {
     font-size: 1.5rem;
-    font-weight: 300;
-    color: black;
   }
 
+  .content p{
+    font-size: 1.2rem;
+  }
+
+  .content img{
+    max-width: 60%;
+  }
+
+}
+
+/* Responsive to 720p lower resolution; can be responsive for mobile */
+@media (max-width:799px){
+  .header span .title{
+    font-size: 2.5rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .content p{
+    font-size: 0.1rem;
+  }
+
+  .content img{
+    max-width: 30%;
+  }
+
+}
   </style>
